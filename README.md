@@ -9,3 +9,6 @@
 
 ## References
 - [https://github.com/Juanpe/Swift-VIPER-Module](https://github.com/Juanpe/Swift-VIPER-Module)
+
+## License
+MVVM-Router is licensed under the MIT License, please see the [LICENSE](LICENSE) file.
