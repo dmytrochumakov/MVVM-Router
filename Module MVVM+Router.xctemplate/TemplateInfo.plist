@@ -11,9 +11,9 @@
 		<string>com.apple.platform.iphoneos</string>
 	</array>
 	<key>DefaultCompletionName</key>
-	<string>SwiftViperModule</string>
+	<string>SwiftMVVMModule</string>
 	<key>Description</key>
-	<string>Basic Swift VIPER module template. Creates View, Interactor, Presenter, Router with protocols.</string>
+	<string>Basic Swift MVVM module template. Creates ViewController, Interactor, ViewModel, Router.</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>MainTemplateFile</key>
@@ -28,7 +28,7 @@
 			<key>Default</key>
 			<string></string>
 			<key>Identifier</key>
-			<string>viperModuleName</string>
+			<string>ModuleName</string>
 			<key>Name</key>
 			<string>Module name</string>
 			<key>Required</key>
@@ -38,28 +38,14 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_viperModuleName___</string>
+			<string>___VARIABLE_ModuleName___</string>
 			<key>Identifier</key>
 			<string>productName</string>
 			<key>Type</key>
 			<string>static</string>
 		</dict>
-		<dict>
-			<key>Identifier</key>
-			<string>InputOutput</string>
-			<key>Name</key>
-			<string>Divide Interactor protocol (Input &amp; Output)</string>
-			<key>Description</key>
-			<string>Divide Interactor protocol (Input &amp; Output)</string>
-			<key>Type</key>
-			<string>checkbox</string>
-			<key>Default</key>
-			<string>false</string>
-			<key>NotPersisted</key>
-			<true/>
-		</dict>
 	</array>
 	<key>Template Author</key>
-	<string>Juanpe Catalán - @JuanpeCMiOS</string>
+	<string>Dmytro Chumakov - @dmytro_chumakov</string>
 </dict>
 </plist>
