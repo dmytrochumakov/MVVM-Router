@@ -1,9 +1,9 @@
 //
 //  main.swift
-//  InstallVIPERTemplate
+//  InstallTemplate
 //
-//  Created by Juanpe Catalán on 17/02/2017.
-//  Copyright © 2017 Juanpe Catalán. All rights reserved.
+//  Created by Dmytro Chumakov.
+//  Copyright © 2023 Dmytro Chumakov. All rights reserved.
 //
 
 import Foundation
@@ -18,20 +18,14 @@ func printInConsole(_ message:Any) {
 }
 
 func moveTemplate() {
-
     let fileManager = FileManager.default
     let destinationPath = bash(command: "xcode-select", arguments: ["--print-path"]).appending(destinationRelativePath)
     do {
         if !fileManager.fileExists(atPath:"\(destinationPath)/\(templateName)") {
-        
             try fileManager.copyItem(atPath: templateName, toPath: "\(destinationPath)/\(templateName)")
-            
             printInConsole("✅  Template installed succesfully 🎉. Enjoy it 🙂")
-            
         } else {
-            
             try _ = fileManager.replaceItemAt(URL(fileURLWithPath:"\(destinationPath)/\(templateName)"), withItemAt: URL(fileURLWithPath:templateName))
-            
             printInConsole("✅  Template already exists. So has been replaced succesfully 🎉. Enjoy it 🙂")
         }
     } catch let error as NSError {

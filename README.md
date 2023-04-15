@@ -1,14 +1,12 @@
 ## For use template
 - Download archive
 - Transfer the unpacked files to the project root
+- In case you are using macOS Ventura give Terminal full disk access (System Settings -> Privacy & Security -> Full Disk Access)
 - Open terminal 
-- Go to folder with .xcodeproj
-- Write sudo swift install.swift
+- Go to a folder with .xcodeproj
+- Write swift install.swift
 - Open your project
 - Use a template
 
-## References
-- [https://github.com/Juanpe/Swift-VIPER-Module](https://github.com/Juanpe/Swift-VIPER-Module)
-
 ## License
-MVVM-Router is licensed under the MIT License, please see the [LICENSE](LICENSE) file.
+MVVM+Router is licensed under the MIT License, please see the [LICENSE](LICENSE) file.
